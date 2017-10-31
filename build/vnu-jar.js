@@ -30,6 +30,8 @@ childProcess.exec('java -version', (error, stdout, stderr) => {
     'Bad value “tablist” for attribute “role” on element “nav”.',
     // We use holder.js with `data-src` and no `src`; we could work around this, not sure it's worth it.
     'Element “img” is missing required attribute “src”.',
+    // Markup used in Components > Forms > Layout > Form grid > Horizontal form is currently invalid,
+    // but used this way due to lack of support for flexbox layout on <fieldset> element in most browsers
     'Element “legend” not allowed as child of element “div” in this context.*',
     'The “datetime-local” input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.',
     // The next one we are using it because IE11 doesn't recognise <main>.
